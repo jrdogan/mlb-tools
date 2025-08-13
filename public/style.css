@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+#game-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#lives {
+    margin-bottom: 20px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 2px;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.word-tile {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.word-tile.selected {
+    background-color: #a5d6a7;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.solved-group {
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.solved-group.easy { background-color: #a5d6a7; }
+.solved-group.medium { background-color: #fff59d; }
+.solved-group.hard { background-color: #ef9a9a; }
+.solved-group.tricky { background-color: #ce93d8; }
+
+.solved-group .connection {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.solved-group .words {
+    font-size: 16px;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+.shake {
+    animation: shake 0.5s;
+}
+
+@media (max-width: 600px) {
+    #game-container {
+        padding: 10px;
+    }
+
+    #game-board {
+        gap: 5px;
+    }
+
+    .word-tile {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    #buttons {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - EDFSports Connections</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Admin - Manage Games</h1>
+    <form id="game-form">
+        <h2>Add New Game</h2>
+        <div id="groups-container">
+            <fieldset>
+                <legend>Group 1</legend>
+                <label for="g1-connection">Connection:</label>
+                <input type="text" id="g1-connection" name="g1-connection" required>
+                <label for="g1-level">Difficulty:</label>
+                <select id="g1-level" name="g1-level">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                    <option value="tricky">Tricky</option>
+                </select>
+                <label>Words:</label>
+                <input type="text" name="g1-word" required>
+                <input type="text" name="g1-word" required>
+                <input type="text" name="g1-word" required>
+                <input type="text" name="g1-word" required>
+            </fieldset>
+            <fieldset>
+                <legend>Group 2</legend>
+                <label for="g2-connection">Connection:</label>
+                <input type="text" id="g2-connection" name="g2-connection" required>
+                <label for="g2-level">Difficulty:</label>
+                <select id="g2-level" name="g2-level">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                    <option value="tricky">Tricky</option>
+                </select>
+                <label>Words:</label>
+                <input type="text" name="g2-word" required>
+                <input type="text" name="g2-word" required>
+                <input type="text" name="g2-word" required>
+                <input type="text" name="g2-word" required>
+            </fieldset>
+            <fieldset>
+                <legend>Group 3</legend>
+                <label for="g3-connection">Connection:</label>
+                <input type="text" id="g3-connection" name="g3-connection" required>
+                <label for="g3-level">Difficulty:</label>
+                <select id="g3-level" name="g3-level">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                    <option value="tricky">Tricky</option>
+                </select>
+                <label>Words:</label>
+                <input type="text" name="g3-word" required>
+                <input type="text" name="g3-word" required>
+                <input type="text" name="g3-word" required>
+                <input type="text" name="g3-word" required>
+            </fieldset>
+            <fieldset>
+                <legend>Group 4</legend>
+                <label for="g4-connection">Connection:</label>
+                <input type="text" id="g4-connection" name="g4-connection" required>
+                <label for="g4-level">Difficulty:</label>
+                <select id="g4-level" name="g4-level">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                    <option value="tricky">Tricky</option>
+                </select>
+                <label>Words:</label>
+                <input type="text" name="g4-word" required>
+                <input type="text" name="g4-word" required>
+                <input type="text" name="g4-word" required>
+                <input type="text" name="g4-word" required>
+            </fieldset>
+        </div>
+        <button type="submit">Save Game</button>
+    </form>
+    <script src="admin.js"></script>
+</body>
+</html>

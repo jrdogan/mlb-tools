@@ -1,0 +1,29 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "groups": [
+        {
+          "level": "easy",
+          "connection": "BASEBALL ACTIONS",
+          "words": ["SWING", "PITCH", "CATCH", "THROW"]
+        },
+        {
+          "level": "medium",
+          "connection": "FOOTBALL POSITIONS",
+          "words": ["QUARTERBACK", "RECEIVER", "CENTER", "GUARD"]
+        },
+        {
+          "level": "hard",
+          "connection": "BASKETBALL TEAMS",
+          "words": ["LAKERS", "CELTICS", "BULLS", "WARRIORS"]
+        },
+        {
+          "level": "tricky",
+          "connection": "SOCCER FORMATIONS",
+          "words": ["DIAMOND", "FLAT", "BOX", "CHRISTMAS TREE"]
+        }
+      ]
+    }
+  ]
+}
